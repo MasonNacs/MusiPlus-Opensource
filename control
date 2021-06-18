@@ -1,0 +1,10 @@
+Package: com.masonnacs.musiplus
+Name: MusiPlus
+Author: MasonNacs <null>
+Description: Colors Musi and disables all ads, you can also customize the colors in preferences. Requires iOS 13 and above.
+Depends: firmware (>=13.0), mobilesubstrate, preferenceloader, com.spark.libsparkcolourpicker
+Maintainer: MasonNacs <(null)>
+Architecture: iphoneos-arm
+Section: Tweaks
+Version: 1.0
+Depiction: https://masonnacs.github.io/masonsrepo.github.io/dep/?p=com.masonnacs.musiplus
