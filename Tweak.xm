@@ -5,9 +5,9 @@ NSDictionary* prefs = [NSDictionary dictionaryWithContentsOfFile: @"/var/mobile/
 UIColor* selectedColorB = [SparkColourPickerUtils colourWithString: [prefs objectForKey:@"bcolor"] withFallback: @"#1a0014"];
 UIColor* selectedColorF = [SparkColourPickerUtils colourWithString: [prefs objectForKey:@"fcolor"] withFallback: @"#ffd3f6"];
 
-@interface MSearchLoadingImageView
-     @property(nonatomic, copy, readwrite) UIColor* backgroundColor;
-@end
+//@interface MSearchLoadingImageView
+//     @property(nonatomic, copy, readwrite) UIColor* backgroundColor;
+//@end
 
 @interface MAdBannerView
      @property(nonatomic, assign, readwrite, getter=isHidden) BOOL hidden;
@@ -22,11 +22,11 @@ UIColor* selectedColorF = [SparkColourPickerUtils colourWithString: [prefs objec
 }
 %end
 
-%hook MSearchLoadingImageView
-- (void)layoutSubviews {
-      self.backgroundColor = selectedColorF;
-}
-%end
+//%hook MSearchLoadingImageView
+//- (void)layoutSubviews {
+//      self.backgroundColor = selectedColorF;
+//}
+//%end
 
 %hook MAdBannerView
 - (void)layoutSubviews {
